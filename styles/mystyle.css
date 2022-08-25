@@ -118,3 +118,57 @@ label {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
+
+  /* Search panel start */
+
+  .searchPanel {
+    position: fixed;
+    background-color: #cb410b;
+    height: 100vh;
+    width: 30px;
+    right: 0px;
+    top: 0;
+    transition: width 2s;
+    display: flex;
+  }
+
+  .searchPanelAnim {
+    width: 300px;
+  }
+
+  .panelText {
+    position: relative;
+    color: white;
+    top: 20px;
+    left: 5px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    height: 95vh;
+    cursor: pointer;
+  }
+
+  .closeCross {
+    text-align: right;
+    color: white;
+    cursor: pointer;
+  }
+
+  .searchForm {
+    padding-left: 20px;
+    padding-top: 135px;
+  }
+
+  .searchFormLabel {
+    color: white;
+    display: block;
+  }
+
+  .searchFormField {
+    width: 225px;
+  }
+
+  .searchFormPanel {
+    display: flex;
+  }
+
+  /* Search panel end */

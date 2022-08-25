@@ -17,6 +17,36 @@
             <button type="submit" class="button">Search</button>
         </form>
     </div>
+
+    <!-- Panel starts here -->
+    <aside class="searchPanel" id="searchPanel">
+        <span class="panelText" id="panelText">A D V A N C E D&nbsp;&nbsp;S E A R C H</span>
+        <form id="searchForm" class="searchForm">
+            <div class="closeCross" id="closeCross">X</div>
+            
+            <label class="searchFormLabel" for="builder">Builder</label><input type="text" id="builder" class="searchFormField">
+            
+            <label class="searchFormLabel" for="model">Model</label><input type="text" id="model" class="searchFormField">
+            
+            <label class="searchFormLabel" for="type">Type</label><input type="text" id="type" class="searchFormField">
+            
+            <label class="searchFormLabel" for="backwood">Backwood</label><input type="text" id="backwood" class="searchFormField">
+            
+            <label class="searchFormLabel" for="topwood">Topwood</label><input type="text" id="topwood" class="searchFormField">
+            
+            <label class="searchFormLabel" for="price">Price</label><input type="number" step="0.50" id="price" class="searchFormField">
+
+            <br><br>
+
+            <div class="searchFormPanel">
+                <button type="reset" class="searchFormButton">Reset</button>
+                <button type="submit" class="searchFormButton">Apply</button>
+            </div>
+        </form>
+    </aside>
+
+    <!-- Panel ends here -->
+
     <table class="tablelist">
         <thead>
             <tr>

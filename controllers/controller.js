@@ -31,4 +31,19 @@ export default class Controller {
         }
         this.view.message(template);
     }
+
+    search(searchGuitar) {
+        const guitar = this.model.guitarList.search(searchGuitar);
+        let template = "";
+
+        if (guitar !== null) {
+            template = this.buildTemplate(guitar);
+        } else {
+            template = `
+            <tr class="customerrow">
+            <td colspan="8">Nothing to show</td>
+            </tr>`;
+        }
+        this.view.message(template);
+    }
 }
