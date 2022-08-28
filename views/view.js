@@ -5,6 +5,7 @@ export default class View {
         const self = this;
         const snSearchForm = document.getElementById("snSearchForm");
         const snField = document.getElementById("snField");
+        const searchPanel = document.getElementById("searchPanel");
         const panelText = document.getElementById("panelText");
         const closeCross = document.getElementById("closeCross");
         const searchForm = document.getElementById("searchForm");
@@ -22,9 +23,9 @@ export default class View {
             self.controller.snSearch(snField.value);
         }
 
-        searchForm.onSubmit = function (e) {
+        searchForm.onsubmit = function (e) {
             e.preventDefault();
-            const optimalGuitar = new Guitar ("", price.value, builder.value, model.value, type.value, backwood.value, topwood.value);
+            const optimalGuitar = new Guitar("", price.value, builder.value, model.value, type.value, backwood.value, topwood.value);
             self.controller.search(optimalGuitar);
             searchPanel.classList.remove("searchPanelAnim");
         }
