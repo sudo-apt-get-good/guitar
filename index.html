@@ -56,6 +56,46 @@
 
     <!-- Panel ends here -->
 
+    <!-- Add guitar dialog starts -->
+    <dialog id="guitarDialog">
+        <form method="dialog" id="guitarDialogForm">
+            <fieldset>
+                <legend>Add new guitar</legend>
+
+                <label for="snfield">S/N:</label><input text="text" class="inputField dialogField" id="snfield"
+                    placeholder="Type in serial number" required>
+
+                <label for="builderfield">Builder: </label><input type="text" class="inputField dialogField"
+                    id="builderfield" placeholder="Type in builder name" required>
+
+
+                <label for="modelfield">Model: </label><input type="text" class="inputField dialogField" id="modelfield"
+                    placeholder="Type in model name" required>
+
+                <label for="typefield">Type: </label><input type="text" class="inputField dialogField" id="typefield"
+                    placeholder="Type in guitar type" required>
+
+                <label for="backwoodfield">backwood: </label><input type="text" class="inputField dialogField"
+                    id="backwoodfield" placeholder="Type in backwood name" required>
+
+                <label for="topwoodfield">Topwood: </label><input type="text" class="inputField dialogField"
+                    id="topwoodfield" placeholder="Type in topwood name" required>
+
+                <label for="pricefield">Price: </label><input type="text" class="inputField dialogField" id="pricefield"
+                    placeholder="Type in builder name" required>
+
+                <br><br>
+                <div class="dialogBtnsPanel">
+                    <button type="button" id="cancelButton" class="button">Cancel</button>
+                    <button type="button" id="saveButton" class="button">Save</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </dialog>
+    <!-- add guitar dialog ends -->
+
+
     <table class="tablelist">
         <thead>
             <tr>
