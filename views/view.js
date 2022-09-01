@@ -15,8 +15,13 @@ export default class View {
         const backwood = document.getElementById("backwood");
         const topwood = document.getElementById("topwood");
         const price = document.getElementById("price");
+        const showAllGuitarsButton = document.getElementById('showAllGuitarsButton')
 
         self.controller = controller;
+
+        showAllGuitarsButton.onclick = function() {
+            self.controller.showAllGuitars();
+        }
 
         snSearchForm.onsubmit = function (e) {
             e.preventDefault();

@@ -31,4 +31,8 @@ export default class Inventory {
         }
         return null;
     }
+
+    allGuitars() {
+        return this.guitars;
+    }
 }

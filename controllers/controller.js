@@ -46,4 +46,14 @@ export default class Controller {
         }
         this.view.message(template);
     }
+
+    showAllGuitars() {
+        let template = ""
+        for (const guitar of this.model.guitarList.allGuitars()) {
+            template += this.buildTemplate(guitar);
+        }
+        this.view.message(template);
+    }
+    
+
 }
