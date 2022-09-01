@@ -16,6 +16,9 @@ export default class View {
         const topwood = document.getElementById("topwood");
         const price = document.getElementById("price");
         const showAllGuitarsButton = document.getElementById('showAllGuitarsButton')
+        const guitarDialogForm = document.getElementById('guitarDialogForm')
+        const addGuitarButton = document.getElementById('addGuitarButton');
+        const guitarDialog = document.getElementById('guitarDialog')
 
         self.controller = controller;
 
@@ -41,6 +44,12 @@ export default class View {
 
         closeCross.onclick = function () {
             searchPanel.classList.remove("searchPanelAnim");
+        }
+
+        // Dialog eventhandler
+        addGuitarButton.onclick = function () {
+            guitarDialogForm.reset();
+            guitarDialog.showModal();
         }
     }
 
