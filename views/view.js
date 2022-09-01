@@ -61,4 +61,4 @@ export default class View {
 
 }
 
-const testtt= "test"
+const testtt = "test"
