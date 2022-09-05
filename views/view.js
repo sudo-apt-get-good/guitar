@@ -19,6 +19,7 @@ export default class View {
         const guitarDialogForm = document.getElementById('guitarDialogForm')
         const addGuitarButton = document.getElementById('addGuitarButton');
         const guitarDialog = document.getElementById('guitarDialog')
+        const cancelButton = document.getElementById('cancelButton')
 
         self.controller = controller;
 
@@ -51,6 +52,23 @@ export default class View {
             guitarDialogForm.reset();
             guitarDialog.showModal();
         }
+
+        cancelButton.onclick = function () {
+            guitarDialog.close();
+        }
+
+        guitarDialogForm.onsubmit = function () {
+            self.controller.newGuitar({
+                serialNumber: document.getElementById("snfield").value,
+                builder: document.getElementById("builderfield").value,
+                model: document.getElementById("modelfield").value,
+                type: document.getElementById("typefield").value,
+                backwood: document.getElementById("backwoodfield").value,
+                topwood: document.getElementById("topwoodfield").value,
+                price: parseFloat(document.getElementById("pricefield").value)
+            })
+        }
+
     }
 
     message(template) {
